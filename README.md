@@ -22,15 +22,21 @@ The dataset includes the following fields:
 ## Report Sections
 
 ### 1. Sales Overview
- Yearly Sales Overview
  
+ Yearly Sales Overview
+
 - **Total Revenue**: 1105330
 - **Total Quantity sold**: 38681
 - **Total Unit Price**: 161170
 - **Average Sales Price**: 186
 
+- **Total Revenue**:995760
+- **Total Quantity sold**: 29780
+- **Total Unit Price**: 129090
+- **Average Sales Price**: 250
+
 #### Insights
-- Significant revenue was generated, but yearly variability indicates potential seasonality or other external factors affecting sales flow.
+- Significant revenue was generated in year2023 compared to year 2024,  yearly variability indicates potential seasonality or other external factors affecting sales flow.
 
 #### Actions
 - **Increase Average Order Value**: Encourage upselling or bundling of products to increase the order size.
@@ -43,7 +49,7 @@ The dataset includes the following fields:
 ---
 
 ### 2. Top-Performing Products
-Revenue Generated Per Product
+##-Revenue Generated Per Product
 SHOES-336,000
 HAT:229,080
 SHIRT:198,400
@@ -51,7 +57,7 @@ GLOVES:148,200
 JACKET:44,640
 S0CKS:39,440
 - **Top Product by Revenue**: *SHOES* - 336,000
- Quantity sold Per Product
+##-Quantity sold Per Product
 HAT:15,929
 SHOES:14,402
 SHIRT:12,388
@@ -96,18 +102,6 @@ WEST:300,345
 
 ---
 
-### 4. Monthly Sales Trends
-
-- **Peak Sales Month**: December - $150,000
-- **Lowest Sales Month**: February - $50,000
-
-#### Insights
-- December shows a peak, likely due to holiday shopping, while February has the lowest sales, suggesting a seasonal post-holiday dip.
-
-#### Actions
-- **Stock and Staffing Adjustments**: Increase inventory and staffing for high-demand months.
-- **Off-Season Promotions**: Run targeted promotions in February to stimulate demand during slower months.
-
 #### Recommendations
 - **Seasonal Planning**: Adjust inventory and staffing to meet expected seasonal demand.
 - **Off-Season Marketing Campaigns**: Use discounts and incentives during low-demand months to boost sales.
@@ -126,11 +120,3 @@ Implementing these strategies will help enhance revenue, optimize product market
 
 ---
 
-### Repository Files
-- **README.md**: This report
-- **data/sales_data.csv**: The dataset used for analysis
-- **notebooks/sales_analysis.ipynb**: Jupyter Notebook with code used for analysis and visualizations
-
---- 
-
-Feel free to let me know if you’d like further customization on the README!
