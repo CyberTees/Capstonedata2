@@ -39,7 +39,19 @@ The dataset for the analysis was provided by the incubator Hub,an orgainization 
 - POWERBI for data visualization.
 
 ### *Dashboard And Tables Overview*
+
 #### EXCEL TABLE
+
+![pivot tabledata](https://github.com/user-attachments/assets/1a7bde05-9e90-4e41-a528-9fb6c2919669)
+
+![pivot table salesdatas](https://github.com/user-attachments/assets/c2c4cba0-e04f-475a-9e8e-0cb3477f07bb)
+
+
+![pivot tab sales](https://github.com/user-attachments/assets/f9db6a6a-7cbd-4c3d-91f6-2564c94184b2)
+
+
+![pivotable sales](https://github.com/user-attachments/assets/74eeddad-09d4-4ba3-b23e-256070d3562d)
+
 
 #### SQL TABLE
 ```sql
@@ -107,20 +119,23 @@ THEN 1 ELSE 0 END) = 0
 ```
 #### POWER BI
 
-
-
-#### Report Section
 ![powerbi dashboard](https://github.com/user-attachments/assets/10f693d9-fcfb-4609-aebd-b651e7895679)
 
 
+#### Report Section
+
 ### 1. Sales Overview
  
- ### Yearly Sales Overview
+ ### Yearly Sales Performance
+
+ ## Year  2023
 
 - **Total Revenue**: 1105330
 - **Total Quantity sold**: 38681
 - **Total Unit Price**: 161170
 - **Average Sales Price**: 186
+
+## YEAR 2024
 
 - **Total Revenue**:995760
 - **Total Quantity sold**: 29780
@@ -141,7 +156,8 @@ THEN 1 ELSE 0 END) = 0
 ---
 
 ### 2. Top-Performing Products
-##-Revenue Generated Per Product
+
+## Revenue Generated Per Product
 -- **SHOES**-336,000
 --**HAT**:229,080
 --**SHIRT**:198,400
@@ -149,7 +165,8 @@ THEN 1 ELSE 0 END) = 0
 --**JACKET**:44,640
 --**S0CKS**:39,440
 - **Top Product by Revenue**: *SHOES* - 336,000
-##-Quantity sold Per Product
+
+## Quantity sold Per Product
 --**HAT**:15,929
 --**SHOES**:14,402
 --**SHIRT**:12,388
