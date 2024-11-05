@@ -110,6 +110,8 @@ THEN 1 ELSE 0 END) = 0
 
 
 #### Report Section
+![powerbi dashboard](https://github.com/user-attachments/assets/10f693d9-fcfb-4609-aebd-b651e7895679)
+
 
 ### 1. Sales Overview
  
