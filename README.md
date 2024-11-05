@@ -19,11 +19,37 @@ The dataset includes the following fields:
 
 ---
 
-## Report Sections
+---
+
+### *. Analysis Approach*
+
+#### *Data Collection*
+The dataset for the analysis was provided by the incubator Hub,an orgainization built to train and support women in technology.The data was provided in excel workbook format for easy accessibility.
+#### *Data manipulation*
+- *Data Cleaning*:
+   .Removed duplicates entry in excel and checkedfor speling errors and blank cells to ensure data quality.
+- *Data Transformation*
+   .Ensured all data fields were assigned correctly with the date field formatted to date formats.
+   . Created new columns:
+     - Sales Price:By deriving the product of multiplying the quantity column  by the unit price column.
+       
+### *Tools Used*
+- Microsoft Excel for data cleaning and analysis using pivot table.[Download Here](https://www.microsoft.com)
+- SQL For querying of data.
+- POWERBI for data visualization.
+
+### *Dashboard And Tables Overview*
+#### EXCEL TABLE
+
+#### SQL TABLE
+
+#### POWER BI
+
+#### Report Section
 
 ### 1. Sales Overview
  
- Yearly Sales Overview
+ ### Yearly Sales Overview
 
 - **Total Revenue**: 1105330
 - **Total Quantity sold**: 38681
@@ -50,20 +76,20 @@ The dataset includes the following fields:
 
 ### 2. Top-Performing Products
 ##-Revenue Generated Per Product
-SHOES-336,000
-HAT:229,080
-SHIRT:198,400
-GLOVES:148,200
-JACKET:44,640
-S0CKS:39,440
+-- **SHOES**-336,000
+--**HAT**:229,080
+--**SHIRT**:198,400
+--**GLOVES**:148,200
+--**JACKET**:44,640
+--**S0CKS**:39,440
 - **Top Product by Revenue**: *SHOES* - 336,000
 ##-Quantity sold Per Product
-HAT:15,929
-SHOES:14,402
-SHIRT:12,388
-GLOVES:12,369
-SOCKS:7,921
-JACKET:5452
+--**HAT**:15,929
+--**SHOES**:14,402
+--**SHIRT**:12,388
+--**GLOVES**:12,369
+--**SOCKS**:7,921
+--**JACKET**:5452
 - **Top Product by Quantity Sold**: *HAT* - 15,929units
 
 #### Insights
