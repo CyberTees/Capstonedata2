@@ -42,9 +42,71 @@ The dataset for the analysis was provided by the incubator Hub,an orgainization 
 #### EXCEL TABLE
 
 #### SQL TABLE
+```sql
+Create database CapstoneProjectdb
 
-#### POWERBI
-Screenshot (102).png
+select * from [dbo].[Capstone sql]
+
+.....Total Sales For Each Product......
+
+SELECT Product, SUM(Sales_Price) AS TotalSales
+FROM dbo.[Capstone sql]
+GROUP BY Product
+
+.......Number of Sales Transactions in Each Region...
+
+SELECT Region, COUNT(OrderID) AS No_of_SalesTransactions
+FROM dbo.[Capstone sql]
+GROUP BY Region
+
+......Highest Selling Product By totalsales Value...
+
+SELECT Top (1) Product, SUM(Sales_Price) AS TotalSales
+FROM dbo.[Capstone sql]
+GROUP BY Product
+ORDER BY TotalSales DESC
+
+.....Total Revenue Per Product.......
+
+SELECT Product, SUM(Sales_Price) AS Totalrevenue
+FROM dbo.[Capstone sql]
+GROUP BY Product
+
+.....monthly sales totals for the current year......
+
+SELECT Month(OrderDate) AS Month,
+SUM(Sales_Price) AS Monthly_SalesTotal
+FROM dbo.[capstone sql] WHERE YEAR(OrderDate) = 2024
+GROUP BY Month(OrderDate)
+ORDER BY month(orderDate)
+
+......Top 5 customers by total purchase amount.....
+
+SELECT Top (5) Customer_Id,
+ SUM(Sales_Price) AS TotalPurchaseAmount FROM dbo.[Capstone sql]
+GROUP BY Customer_Id
+ORDER BY TotalPurchaseAmount DESC
+
+...Percentage of total sales contributed by each region....
+
+SELECT Region, SUM(sales_price) AS RegionTotalSales,
+FORMAT(ROUND((SUM(Sales_price) / CAST((SELECT SUM(Sales_price) FROM dbo.[Capstone sql]) AS DECIMAL(10,2)) * 100), 1), '0.#') 
+AS PercentageOfTotalSales
+FROM dbo.[Capstone sql]
+GROUP BY Region
+ORDER BY PercentageOfTotalSales DESC
+
+...Products with no sales in the last quarter....
+
+SELECT Product FROM dbo.[Capstone sql]
+GROUP BY Product
+HAVING SUM(CASE 
+WHEN OrderDate BETWEEN '2024-06-01' AND '2024-08-31' 
+THEN 1 ELSE 0 END) = 0
+
+```
+#### POWER BI
+
 
 
 #### Report Section
